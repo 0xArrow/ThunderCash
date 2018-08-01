@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2018-2019 The ThunderCash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,10 +36,10 @@ public:
         pchMessageStart[2] = 0xc3;
         pchMessageStart[3] = 0xb2;
         vAlertPubKey = ParseHex("04c5788ca1e268a7474763fa965210b6fa6b04a45f52d21056c62fb19a2de991aa15aa1d1c516f34d2a0016f51a87959c89f51a148db30c839f71bc525dde8c480");
-        nDefaultPort = 11884;
-        nRPCPort = 11885;
+        nDefaultPort = 33996;
+        nRPCPort = 33999;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
-        nSubsidyHalvingInterval = 700800; // 2 years
+        nSubsidyHalvingInterval = 1000000;
         nMasternodePortForkHeight = 1246400 - 1000; // ~end sep 2017
         nRewardForkHeight1 = 1246400; // ~end sep 2017
         nRewardForkHeight2 = 1275200; // ~end oct 2017
@@ -128,8 +129,8 @@ public:
 
         vAlertPubKey = ParseHex("040d3090a194381599d0f53f89ec60b9ec77f0e7b61978ef445142c8a4f1e154ca3441a5e46e12910540352edbd8af43fc1ee1da9a935c1c252fe7426c323d3d32");
 
-        nDefaultPort = 21994;
-        nRPCPort = 21995;
+        nDefaultPort = 33994;
+        nRPCPort = 33995;
         strDataDir = "testnet3";
 
         nMasternodePortForkHeight = 400;
